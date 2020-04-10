@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-step login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="page-login">
+        <form>
+            <h2>Welcome back!</h2>
+            <p>Please sign in below</p>
+            <div class="user-email">
+                <input type="text" placeholder="Username or email" id="user">
+            </div>
+            <div class="user-password">
+                <input type="password" name="password" placeholder="password" oninput=" handleChange()" id="password">
+                <button class="btn" onclick="showPass()"> &copy</button>
+            </div>
+            <button id="submit" type="button" >submit</button>
+        </form>
+        <div class="next-prev">
+            <button class="btn prev" id="prev" onclick="prev()" style="display: none;"> &lbarr; previous</button>
+            <button class="btn next" id="next" onclick="next()"> next &rbarr;</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
